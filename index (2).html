@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramlall’s Networking | Electrical Engineering Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <!-- NAVBAR -->
+    <nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <picture>
+                    <source srcset="assets/logo.webp" type="image/webp">
+                    <img src="assets/logo.jpg" alt="Ramlall’s Networking Logo" class="h-10 w-auto" loading="eager" width="300" height="300">
+                </picture>
+                <div class="font-display text-2xl font-semibold tracking-tighter">Ramlall’s Networking</div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+            
+            <a href="#contact" 
+               class="px-6 py-2.5 bg-white text-slate-950 hover:bg-slate-100 font-semibold rounded-3xl text-sm transition-colors">
+                Get a Quote
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center relative">
+        <div class="max-w-screen-2xl mx-auto px-8 text-white">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2 rounded-3xl text-sm mb-6">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Guyana-based • Regional Expertise
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-display tracking-tighter leading-none">
+                    Powering Progress<br>Through Expert<br>Electrical Engineering
+                </h1>
+                
+                <p class="mt-6 text-xl text-slate-300 max-w-md">
+                    Reliable electrical installations, industrial solutions, EV systems, and networking across Guyana and the Caribbean.
+                </p>
+                
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#contact" 
+                       class="px-8 py-4 bg-blue-600 hover:bg-indigo-500 transition-colors rounded-3xl font-semibold text-lg inline-flex items-center gap-x-3">
+                        Start Your Project
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="#services" 
+                       class="px-8 py-4 border border-white/60 hover:bg-white/10 transition-colors rounded-3xl font-medium text-lg">
+                        Our Services
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center gap-x-8 text-sm">
+                    <div>7+ Years Electrical Experience</div>
+                    <div class="h-3 w-px bg-white/30"></div>
+                    <div>Certified EV &amp; Hybrid Technician</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center text-xs tracking-widest">
+            <div class="animate-bounce">SCROLL</div>
+            <div class="w-px h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent mt-2"></div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-screen-2xl mx-auto px-8 py-20">
+        <div class="text-center mb-12">
+            <span class="text-blue-400 text-sm font-semibold tracking-widest">WHAT WE OFFER</span>
+            <h2 class="text-5xl font-display tracking-tighter mt-2">Comprehensive Electrical Engineering Solutions</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">⚡</div>
+                <h3 class="text-2xl font-semibold mb-3">Electrical Installations &amp; Maintenance</h3>
+                <p class="text-slate-400">Industrial, commercial, and residential wiring, panel upgrades, and preventive maintenance.</p>
+                <ul class="mt-6 space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-x-2">✓ Code-compliant installations</li>
+                    <li class="flex items-center gap-x-2">✓ Troubleshooting &amp; repairs</li>
+                    <li class="flex items-center gap-x-2">✓ Safety audits</li>
+                </ul>
+            </div>
+            
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🔧</div>
+                <h3 class="text-2xl font-semibold mb-3">System Integration &amp; Upgrades</h3>
+                <p class="text-slate-400">Custom electrical system design, integration, and modernization projects.</p>
+                <ul class="mt-6 space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-x-2">✓ Full system audits</li>
+                    <li class="flex items-center gap-x-2">✓ Retrofit solutions</li>
+                    <li class="flex items-center gap-x-2">✓ Performance optimization</li>
+                </ul>
+            </div>
+            
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🔌</div>
+                <h3 class="text-2xl font-semibold mb-3">EV &amp; Hybrid Vehicle Solutions</h3>
+                <p class="text-slate-400">Level 3 Hybrid &amp; Electric Vehicle Technician services, diagnostics, and conversions.</p>
+            </div>
+            
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-amber-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🌐</div>
+                <h3 class="text-2xl font-semibold mb-3">Networking &amp; Communication Systems</h3>
+                <p class="text-slate-400">Structured cabling, data networks, CCTV, and integrated communication solutions.</p>
+            </div>
+            
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-violet-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">📊</div>
+                <h3 class="text-2xl font-semibold mb-3">Industrial Automation &amp; Consulting</h3>
+                <p class="text-slate-400">Control systems, PLC support, energy audits, and engineering consultancy.</p>
+            </div>
+            
+            <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-8">
+                <div class="w-12 h-12 bg-rose-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🎓</div>
+                <h3 class="text-2xl font-semibold mb-3">Training &amp; Mentorship</h3>
+                <p class="text-slate-400">Workforce development, student placements, and technical training programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-slate-900 py-20">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <img src="https://i.pravatar.cc/600?img=68" alt="Paul Ramlall" 
+                         class="rounded-3xl shadow-2xl w-full">
+                </div>
+                <div class="lg:col-span-7">
+                    <span class="uppercase text-xs tracking-widest text-blue-400">Meet the Founder</span>
+                    <h2 class="font-display text-5xl tracking-tighter mt-3">Paul Ramlall</h2>
+                    <p class="text-xl text-slate-400 mt-2">Electrical Engineer &amp; Networking Specialist</p>
+                    
+                    <div class="prose prose-invert mt-8 text-slate-300 max-w-none">
+                        <p>Ramlall’s Networking brings over 7 years of professional electrical engineering experience combined with formal Electrical Engineering education and multiple technical certifications.</p>
+                        <p>We deliver high-quality, safety-focused electrical and networking solutions across Guyana and the region.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+                        <div class="border-l-4 border-indigo-500 pl-6">
+                            <div class="text-4xl font-semibold">7+</div>
+                            <div class="text-sm text-slate-400">Years Electrical Experience</div>
+                        </div>
+                        <div class="border-l-4 border-indigo-500 pl-6">
+                            <div class="text-4xl font-semibold">Diploma +</div>
+                            <div class="text-sm text-slate-400">EE Student at University of Guyana</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / PORTFOLIO -->
+    <section id="projects" class="max-w-screen-2xl mx-auto px-8 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-5xl font-display tracking-tighter">Recent Projects</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 rounded-3xl overflow-hidden">
+                <div class="h-56 bg-slate-800 flex items-center justify-center text-6xl">📡</div>
+                <div class="p-6">
+                    <div class="font-semibold">Commercial Networking Infrastructure</div>
+                    <div class="text-xs text-slate-400 mt-1">Georgetown Business District • 2025</div>
+                </div>
+            </div>
+            <div class="bg-slate-900 rounded-3xl overflow-hidden">
+                <div class="h-56 bg-slate-800 flex items-center justify-center text-6xl">🏭</div>
+                <div class="p-6">
+                    <div class="font-semibold">Industrial Power Distribution Upgrade</div>
+                    <div class="text-xs text-slate-400 mt-1">Georgetown Facility • 2026</div>
+                </div>
+            </div>
+            <div class="bg-slate-900 rounded-3xl overflow-hidden">
+                <div class="h-56 bg-slate-800 flex items-center justify-center text-6xl">🔌</div>
+                <div class="p-6">
+                    <div class="font-semibold">EV Charging Station Installation</div>
+                    <div class="text-xs text-slate-400 mt-1">Commercial Client • Ongoing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-slate-900 py-20">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-5xl font-display tracking-tighter">Let's Power Your Next Project</h2>
+                    <p class="mt-4 text-slate-400">Get in touch for a free consultation or project quote.</p>
+                    
+                    <div class="mt-12 space-y-6">
+                        <div class="flex gap-x-4">
+                            <div class="text-2xl">📍</div>
+                            <div>
+                                <div class="font-medium">56 Hadfield Street, Stabroek</div>
+                                <div class="text-slate-400">Georgetown, Guyana</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <div class="text-2xl">📞</div>
+                            <div>
+                                <div class="font-medium">+592 XXX-XXXX</div>
+                                <div class="text-slate-400">Available Mon–Sat</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <div class="text-2xl">✉️</div>
+                            <div class="font-medium">contact@ramlallsnetworking.gy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+                    <form class="space-y-6" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-2">Your Name</label>
+                            <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 outline-none focus:border-indigo-500" required>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Phone</label>
+                                <input type="tel" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 outline-none focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Email</label>
+                                <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 outline-none focus:border-indigo-500" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-2">Project Description</label>
+                            <textarea class="w-full bg-slate-900 border border-slate-700 rounded-3xl px-5 py-3 h-32 outline-none focus:border-indigo-500" placeholder="Tell us about your needs..."></textarea>
+                        </div>
+                        <button type="submit"
+                                class="w-full bg-white text-slate-950 py-4 rounded-3xl font-semibold hover:bg-slate-100 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-slate-800">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-sm text-slate-400">
+            <div class="font-display text-white text-xl mb-2">Ramlall’s Networking</div>
+            <div>© 2026 • Professional Electrical Engineering Services in Guyana</div>
+            <div class="mt-4 text-xs">Proudly supporting local talent and regional development</div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been received. We'll contact you shortly.");
+            e.target.reset();
+        }
+        
+        // Tailwind script
+        tailwind.config = {
+            content: [],
+            theme: { extend: {} }
+        };
+        
+        console.log('%cRamlall’s Networking website ready!', 'color:#6366f1; font-weight:600');
+    </script>
+</body>
+</html>
